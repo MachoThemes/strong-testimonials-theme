@@ -1,0 +1,28 @@
+
+@keyframes animation-1 {
+	0% {
+		transform: translateY(-50px);
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+		transform: translateY(-50px);
+	}
+	100% {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+}
+
+@keyframes animation-2 {
+	0% {
+		transform: translateY(0%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(-100%);
+		opacity: 1;
+	}
+}
+
+

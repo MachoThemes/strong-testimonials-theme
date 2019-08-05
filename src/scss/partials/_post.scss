@@ -1,0 +1,17 @@
+.post {
+	margin-bottom: rem(24px);
+}
+
+.post__thumbnail img {
+	border-radius: 4px;
+}
+
+.post__title a {
+	text-decoration: none;
+	color: $headings-color;
+
+	&:hover {
+		color: $accent-color-1;
+	}
+}
+

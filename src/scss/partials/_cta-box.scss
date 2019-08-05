@@ -1,0 +1,12 @@
+.cta-box {
+	background: $accent-color-2;
+	border-radius: 10px;
+	padding-bottom: 0 !important;
+	overflow: hidden;
+
+	svg {
+		width: 140%;
+		//left: -10%;
+		position: relative;
+	}
+}

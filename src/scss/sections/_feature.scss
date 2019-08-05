@@ -1,0 +1,13 @@
+.feature-section {
+}
+
+
+@include media-breakpoint-up(lg) {
+	.feature-section {
+		.illustration {
+			width: 40vw;
+			max-width: 960px;
+		}
+	}
+
+}

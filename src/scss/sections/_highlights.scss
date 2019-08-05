@@ -1,0 +1,40 @@
+.highlights-section {
+	margin-top: rem(-30px);
+}
+
+.highlights-section__wrap {
+	box-shadow: -3px 2px 70px 0px rgba(128, 144, 174, 0.12);
+	border-radius: 10px;
+	background: #fff;
+
+	position: relative;
+
+	> :not(:last-child) {
+		border-bottom: 1px solid #ececec;
+	}
+}
+
+.highlights-section__highlight {
+	padding: 1rem 0.5rem;
+	text-align: center;
+
+
+	svg {
+		height: 50px;
+	}
+
+
+}
+
+
+@include media-breakpoint-up(lg) {
+	.highlights-section__wrap {
+		> :not(:last-child) {
+			border-right: 1px solid #ececec;
+		}
+		> * {
+			border-bottom: none !important;
+		}
+	}
+}
+

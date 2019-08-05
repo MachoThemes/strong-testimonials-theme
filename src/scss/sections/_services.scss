@@ -1,0 +1,24 @@
+.service {
+
+	svg {
+		width: 50px;
+	}
+
+	> a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+.service__pro-label {
+	background: red;
+	display: inline-block;
+	line-height: 1;
+	color: #fff;
+	background-color: $accent-color-1;
+	padding: 3px 6px;
+	font-size: rem(12px);
+	border-radius: 20px;
+	vertical-align: text-top;
+	margin-left: 20px;
+}
