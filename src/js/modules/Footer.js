@@ -17,7 +17,7 @@ export default class Footer {
 			element: this.$footer,
 			offset: '70%',
 			handler: ( direction ) => {
-				this.$footer.find('.odometer').html(1093111);
+				this.$footer.find('.odometer').html(1185426);
 			}
 		});
 	}

@@ -224,7 +224,7 @@ var Footer = function () {
 				element: this.$footer,
 				offset: '70%',
 				handler: function handler(direction) {
-					_this.$footer.find('.odometer').html(1093111);
+					_this.$footer.find('.odometer').html(1185426);
 				}
 			});
 		}

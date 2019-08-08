@@ -6,7 +6,7 @@
 				<h1 class="mb-4">Easily collect and display testimonials on your website<span class="has-primary-color">.</span></h1>
 				<p class="mb-4">Sales copy grabs attention - testimonials drive sales.</p>
 				<p class="mb-4">
-					<div class="stars mr-3"></div><strong>80,000+</strong> Active Installations
+					<div class="stars mr-3"></div><strong>90,000+</strong> Active Installations
 				</p>
 				<a class="button button--xl mb-0" href="<?php echo esc_url( get_permalink( get_page_by_path( 'pricing' ) ) ); ?>">Buy Strong Testimonials</a>
 			</div>
