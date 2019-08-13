@@ -18,6 +18,7 @@ class ST {
 		this.initSidebar();
 		this.initFooter();
 		this.initAccountPage();
+		this.initPricingPage();
 	}
 
 	initHeader() {
@@ -42,6 +43,47 @@ class ST {
 		}
 
 		jQuery( '.edd-manage-license-back' ).attr('href', '/account');
+	}
+
+	initPricingPage() {
+		if( ! jQuery( 'body' ).hasClass( 'page-template-pricing-ltd' ) ) {
+			return;
+		}
+
+		let expires = new Date('Aug 20, 2019 00:00:00');
+
+		let $timer = jQuery( '.timer' );
+		let $daysCountdown = $timer.children().eq(0).find('.timer__countdown');
+		let $hoursCountdown = $timer.children().eq(1).find('.timer__countdown');
+		let $minutesCountdown = $timer.children().eq(2).find('.timer__countdown');
+		let $secondsCountdown = $timer.children().eq(3).find('.timer__countdown');
+
+		// Update the count down every 1 second
+		let interval = setInterval(function() {
+
+			let now = new Date().getTime();
+			let distance = (6*60*60*1000) - (now - expires);
+
+			// Time calculations for days, hours, minutes and seconds
+			let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			$daysCountdown.html( ('0' + days ).slice(-2) );
+			$hoursCountdown.html( ('0' + hours ).slice(-2) );
+			$minutesCountdown.html( ('0' + minutes ).slice(-2) );
+			$secondsCountdown.html( ('0' + seconds ).slice(-2) );
+
+			// If the count down is finished, write some text
+		 	if (distance < 0) {
+				clearInterval( interval );
+				$timer.hide();
+			}
+
+		}, 1000);
+
+
 	}
 
 	initScrollAnimation() {

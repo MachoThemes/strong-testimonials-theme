@@ -515,7 +515,9 @@ function st_get_all_extensions( $plans = array() ) {
 		),
 	);
 	// this will show hidden extensions as well
-	remove_action( 'pre_get_posts', array( EDD_Hide_Download::get_instance(), 'pre_get_posts' ), 9999 );
+	if ( class_exists('EDD_Hide_Download') ) {
+		remove_action( 'pre_get_posts', array( EDD_Hide_Download::get_instance(), 'pre_get_posts' ), 9999 );
+	}
 	$addons = new WP_Query( $args );
 
 	//sort addons based on the number of plans they are included
