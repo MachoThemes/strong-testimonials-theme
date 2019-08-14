@@ -2,6 +2,9 @@
 
 <?php get_header('2'); ?>
 
+<?php get_template_part( 'template-parts/sections/hero-ltd' ); ?>
+<?php get_template_part( 'template-parts/sections/highlights' ); ?>
+
 <section class="section title-section pt-5">
 	<div class="container">
 		<div class="row justify-content-center">
@@ -59,6 +62,7 @@
 </section>
 
 <?php get_template_part( 'template-parts/sections/pricing-ltd' ); ?>
+<?php get_template_part( 'template-parts/sections/services' ); ?>
 <?php get_template_part( 'template-parts/sections/faq' ); ?>
 <?php get_template_part( 'template-parts/sections/as-seen-on' ); ?>
 <?php get_template_part( 'template-parts/sections/lite-vs-pro' ); ?>
