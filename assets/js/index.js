@@ -598,11 +598,10 @@ var ST = function () {
 
 			var expires = new Date('Sep 2, 2019 00:00:00');
 
-			var $timer = jQuery('.timer');
-			var $daysCountdown = $timer.children().eq(0).find('.timer__countdown');
-			var $hoursCountdown = $timer.children().eq(1).find('.timer__countdown');
-			var $minutesCountdown = $timer.children().eq(2).find('.timer__countdown');
-			var $secondsCountdown = $timer.children().eq(3).find('.timer__countdown');
+			var $daysCountdown = jQuery('.hero-section__illustration').find('#number-1');
+			var $hoursCountdown = jQuery('.hero-section__illustration').find('#number-2');
+			var $minutesCountdown = jQuery('.hero-section__illustration').find('#number-3');
+			var $secondsCountdown = jQuery('.hero-section__illustration').find('#number-4');
 
 			// Update the count down every 1 second
 			var interval = setInterval(function () {
@@ -624,7 +623,6 @@ var ST = function () {
 				// If the count down is finished, write some text
 				if (distance < 0) {
 					clearInterval(interval);
-					$timer.hide();
 				}
 			}, 1000);
 		}

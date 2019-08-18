@@ -52,11 +52,10 @@ class ST {
 
 		let expires = new Date('Sep 2, 2019 00:00:00');
 
-		let $timer = jQuery( '.timer' );
-		let $daysCountdown = $timer.children().eq(0).find('.timer__countdown');
-		let $hoursCountdown = $timer.children().eq(1).find('.timer__countdown');
-		let $minutesCountdown = $timer.children().eq(2).find('.timer__countdown');
-		let $secondsCountdown = $timer.children().eq(3).find('.timer__countdown');
+		let $daysCountdown = jQuery( '.hero-section__illustration' ).find('#number-1');
+		let $hoursCountdown = jQuery( '.hero-section__illustration' ).find('#number-2');
+		let $minutesCountdown = jQuery( '.hero-section__illustration' ).find('#number-3');
+		let $secondsCountdown = jQuery( '.hero-section__illustration' ).find('#number-4');
 
 		// Update the count down every 1 second
 		let interval = setInterval(function() {
@@ -78,7 +77,6 @@ class ST {
 			// If the count down is finished, write some text
 		 	if (distance < 0) {
 				clearInterval( interval );
-				$timer.hide();
 			}
 
 		}, 1000);

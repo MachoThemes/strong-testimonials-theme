@@ -3592,6 +3592,9 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
   background: transparent;
   padding-bottom: 0rem; }
 
+.page-template-pricing-ltd .hero-section__illustration text {
+  font-family: 'CircularStd', Arial, Helvetica, sans-serif !important; }
+
 .post-layout-default .title-single__thumbnail img {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0; }
@@ -5400,19 +5403,6 @@ img {
 }  */
 .grecaptcha-badge {
   display: none !important; }
-
-.timer {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: -3px 2px 70px 0px rgba(128, 144, 174, 0.3);
-  font-size: 16px; }
-  .timer .col-3:not(:last-child) {
-    border-right: 1px solid #eeebf2; }
-
-.timer__countdown {
-  font-weight: 600;
-  font-size: 1.375rem;
-  color: #5333ED; }
 
 .widget {
   margin-bottom: 3rem; }
