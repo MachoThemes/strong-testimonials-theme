@@ -9,7 +9,7 @@
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-lg-6">
-				<h1 class="h2 text-center mb-4">Strong Testimonials Lifetime Deal<span class="has-primary-color">.</span><br/>Testimonials drive sales<span class="has-primary-color">.</span></h1>
+				<h1 class="h2 text-center mb-4">Brought to you by <a href="https://www.facebook.com/groups/martechwise" target="_blank">Martech Wise</a><span class="has-primary-color">.</span></h1>
 
 				<div class="title-section__excerpt text-center">Choose the perfect plan for you, risk free with our 14 day money-back guarantee.</div>
 				<div class="row checkout-badges align-items-center mt-3 mb-3">
