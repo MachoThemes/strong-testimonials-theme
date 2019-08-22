@@ -3607,6 +3607,13 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
 .page-template-checkout .main-section {
   font-size: 16px; }
 
+.page-template-checkout #edd_checkout_cart_wrap {
+  margin-top: -4.375rem; }
+
+.page-template-checkout #edd_checkout_cart_form {
+  box-shadow: 0px -6px 25px -10px rgba(128, 144, 174, 0.4);
+  border-radius: 10px; }
+
 .page-template-account .main-section {
   font-size: 16px; }
 
