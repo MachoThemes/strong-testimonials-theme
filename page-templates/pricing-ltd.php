@@ -42,7 +42,7 @@
 
 <?php get_template_part( 'template-parts/sections/pricing-ltd' ); ?>
 <?php get_template_part( 'template-parts/sections/services' ); ?>
-<?php get_template_part( 'template-parts/sections/faq' ); ?>
+<?php get_template_part( 'template-parts/sections/faq-ltd' ); ?>
 <?php get_template_part( 'template-parts/sections/as-seen-on' ); ?>
 <?php get_template_part( 'template-parts/sections/lite-vs-pro' ); ?>
 <?php get_template_part( 'template-parts/sections/testimonials' ); ?>
