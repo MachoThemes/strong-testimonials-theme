@@ -149,7 +149,7 @@ $addons = st_get_all_extensions( $downloads );
 						Lifetime of Free Updates
 						<span class="tooltip">
 							<i class="icon-question-circle"></i>
-							<span class="tooltip__text">You’ll have access to free updates for 1 year or until you cancel your yearly subscription.</span>
+							<span class="tooltip__text">You’ll have lifetime access to updates – including future versions of Strong Testimonials.</span>
 						</span>
 					</div>
 					<div class="col">

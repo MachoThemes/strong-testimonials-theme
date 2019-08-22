@@ -50,7 +50,7 @@ class ST {
 			return;
 		}
 
-		let expires = new Date('Sep 2, 2019 00:00:00');
+		let expires = new Date('Sep 5, 2019 20:00:00');
 
 		let $daysCountdown = jQuery( '.hero-section__illustration' ).find('#number-1');
 		let $hoursCountdown = jQuery( '.hero-section__illustration' ).find('#number-2');
