@@ -16,8 +16,8 @@
 							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-1.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
-							<h5 class="mb-2">Pre-designed Templates</h5>
-							<p>Choose how you want to display testimonials from a range of professional and ready-to-use templates.</p>
+							<h5 class="mb-2">Pro Templates<div class="service__pro-label">PRO</div></h5>
+							<p>Create beautiful testimonial designs with a number of predesigned and easy-to-use premium templates.<br/><a href="/extensions/pro-templates">Learn More</a></p>
 						</div>
 					</div><!-- row -->
 				</div><!-- service-2 -->
