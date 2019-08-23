@@ -69,7 +69,7 @@
 				<div class="accordion mb-2">
 					<div class="accordion__title">Do I need to renew my license?</div>
 					<div class="accordion__content">
-						<p>The license key is valid for life. An active license key is needed for access to updates, support, and our powerful extensions To renew your license, please <a href="/account">log into your account</a>.</p>
+						<p>The license key is valid for life. An active license key is needed for access to updates, support, and our powerful extensions.</p>
 					</div>
 				</div>
 

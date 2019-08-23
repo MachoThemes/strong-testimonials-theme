@@ -403,7 +403,7 @@ var TopBar = function () {
 			return;
 		}
 
-		this.initSticky();
+		//this.initSticky();
 	}
 
 	_createClass(TopBar, [{

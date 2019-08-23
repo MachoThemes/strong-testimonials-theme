@@ -15,7 +15,7 @@ export default class TopBar {
 			return;
 		}
 
-		this.initSticky();
+		//this.initSticky();
 	}
 
 	initSticky() {
