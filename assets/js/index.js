@@ -596,7 +596,7 @@ var ST = function () {
 				return;
 			}
 
-			var expires = new Date('Sep 5, 2019 18:00:00');
+			var expires = new Date('Sep 12, 2019 20:00:00');
 
 			var $daysCountdown = jQuery('.hero-section__illustration').find('#number-1');
 			var $hoursCountdown = jQuery('.hero-section__illustration').find('#number-2');
