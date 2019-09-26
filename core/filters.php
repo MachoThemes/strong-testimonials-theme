@@ -162,3 +162,5 @@ function st_track_post_views ( $post_id ) {
 	}
 	st_set_post_views( $post_id );
 }
+
+add_filter( 'send_password_change_email', '__return_false' );
