@@ -5,7 +5,7 @@
 <?php get_template_part( 'template-parts/sections/hero-ltd' ); ?>
 <?php get_template_part( 'template-parts/sections/highlights' ); ?>
 
-<?php //get_template_part( 'template-parts/sections/pricing-ltd' ); ?>
+<?php get_template_part( 'template-parts/sections/pricing-ltd' ); ?>
 <?php get_template_part( 'template-parts/sections/services' ); ?>
 <?php get_template_part( 'template-parts/sections/faq' ); ?>
 <?php get_template_part( 'template-parts/sections/as-seen-on' ); ?>

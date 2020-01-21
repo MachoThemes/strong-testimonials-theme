@@ -6,7 +6,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+	
+<?php //get_template_part( 'template-parts/sections/promotion' ); ?>
+	
 	<header class="<?php modula_header_class(); ?>">
 		<div class="container">
 			<div class="row justify-content-center">

@@ -539,3 +539,31 @@ function st_get_all_extensions( $plans = array() ) {
 
 	return $addons;
 }
+
+// add_action( 'wp', 'modula_theme_pricing_discounts' );
+function modula_theme_pricing_discounts() {
+
+	if ( is_user_logged_in() ) {
+		$current_user = wp_get_current_user();
+		$discount = new EDD_Discount( '30OFF', true );
+
+		if ( ! $discount->is_used( $current_user->user_email ) ) {
+			$cart_discounts[] = '30OFF';
+		}
+
+	}else{
+		$cart_discounts[] = '30OFF';
+	}
+
+
+	if ( isset( $_GET['discount'] ) )  {
+		$discount = new EDD_Discount( $_GET['discount'], true );
+		if( $discount->status === 'active' && ! in_array(  $_GET['discount'],  $cart_discounts )  ) {
+			$cart_discounts[] = $_GET['discount'];
+		}
+	}
+	if ( $cart_discounts ) {
+		EDD()->session->set( 'cart_discounts', implode( '|', $cart_discounts ) );
+	}
+	
+}

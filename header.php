@@ -7,6 +7,7 @@
 
 <body <?php body_class(); ?>>
 
+	<?php //get_template_part( 'template-parts/sections/promotion' ); ?>
 	<?php do_action('before_header');  ?>
 
 	<header class="<?php modula_header_class(); ?>">

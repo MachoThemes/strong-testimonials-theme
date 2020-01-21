@@ -7,13 +7,14 @@
 //strongtestimonials.com
 $download1_id = 3119;
 $download2_id = 3121;
+$download3_id = 6226;
 
 wp_enqueue_script( 'waypoints' );
 
 $upgrading = false;
 $cart_discounts = edd_get_cart_discounts();
 $utm_medium = isset( $_GET['utm_medium'] ) ? $_GET['utm_medium'] : '';
-$download_ids = array( $download1_id, $download2_id );
+$download_ids = array( $download3_id, $download1_id, $download2_id );
 
 $downloads = array();
 foreach ( $download_ids as $id ) {
@@ -142,6 +143,9 @@ $addons = st_get_all_extensions( $downloads );
 					<div class="col">
 						<i class="icon-ok"></i>
 					</div>
+					<div class="col">
+						<i class="icon-ok"></i>
+					</div>
 					</div><!-- row -->
 
 					<div class="pricing-table row">
@@ -151,6 +155,9 @@ $addons = st_get_all_extensions( $downloads );
 							<i class="icon-question-circle"></i>
 							<span class="tooltip__text">You’ll have lifetime access to updates – including future versions of Strong Testimonials.</span>
 						</span>
+					</div>
+					<div class="col">
+						<i class="icon-ok"></i>
 					</div>
 					<div class="col">
 						<i class="icon-ok"></i>
