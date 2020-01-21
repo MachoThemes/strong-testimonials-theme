@@ -10,7 +10,7 @@
 		<div class="row as-seen-on-section__images">
 			<div class="col-sm-6 col-md-3">
 				<div class="as-seen-on-section__img">
-					<a href="https://www.codeinwp.com"><?php echo file_get_contents( get_template_directory_uri() . '/assets/img/logos/codeinwp.svg' ); ?></a>
+					<a href="https://themeisle.com/blog/best-wordpress-plugins-for-testimonials/" target="_blank" rel="noopener noreferrer"><?php echo file_get_contents( get_template_directory_uri() . '/assets/img/logos/codeinwp.svg' ); ?></a>
 				</div>
 			</div>
 			<div class="col-sm-6 col-md-3">
