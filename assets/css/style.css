@@ -4908,27 +4908,25 @@ img {
   .post__title a:hover {
     color: #5333ED; }
 
-.post-content {
-  /*#ez-toc-container {
-		display: none !important;
-	}*/ }
-  .post-content > *:first-child {
-    margin-top: 0 !important; }
-  .post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6 {
-    margin-top: 4rem; }
-  .post-content .option {
-    display: inline-block;
-    font-size: 0.8em;
-    border-radius: 3px;
-    line-height: 2.1;
-    padding: 0 5px;
-    margin: 0 3px;
-    -webkit-hyphens: none;
-        -ms-hyphens: none;
-            hyphens: none;
-    word-break: keep-all;
-    white-space: nowrap;
-    background: #ececec; }
+.post-content > *:first-child {
+  margin-top: 0 !important; }
+
+.post-content > h1, .post-content > h2, .post-content > h3, .post-content > h4, .post-content > h5, .post-content > h6 {
+  margin-top: 4rem; }
+
+.post-content .option {
+  display: inline-block;
+  font-size: 0.8em;
+  border-radius: 3px;
+  line-height: 2.1;
+  padding: 0 5px;
+  margin: 0 3px;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  word-break: keep-all;
+  white-space: nowrap;
+  background: #ececec; }
 
 .alignwide {
   margin-left: calc( -100vw / 2 + 100% / 2);
