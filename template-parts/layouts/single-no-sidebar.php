@@ -11,9 +11,9 @@
 					<div class="col-lg-3">
 
 						<div class="post-sidebar">
-							<?php if ('1' == get_post_meta( get_the_id(), '_ez-toc-insert', true ) ): ?>
-								<?php echo do_shortcode( '[toc]' ); ?>
-							<?php endif; ?>
+							<?php /*if ('1' == get_post_meta( get_the_id(), '_ez-toc-insert', true ) ): */?><!--
+								<?php /*echo do_shortcode( '[toc]' ); */?>
+							--><?php /*endif; */?>
 						</div><!-- post-sidebar -->
 
 					</div>
