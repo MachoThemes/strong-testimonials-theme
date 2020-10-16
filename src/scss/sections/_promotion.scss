@@ -1,0 +1,72 @@
+/* Timer style */
+.promotion-section {
+  padding:0;
+  background:#454545;
+  z-index:9999;
+  color: #fff;
+}
+
+.promotion-section .timer {
+  margin-left:15px;
+  background:transparent;
+  padding:0;
+}
+
+.promotion-section .timer .days,
+.promotion-section .timer .minutes,
+.promotion-section .timer .hours,
+.promotion-section .timer .seconds{
+  position: relative;
+  padding: 10px 10px 30px 10px;
+  font-size: 22px;
+  min-width: 40px;
+  display: inline-block;
+  /* background: rgba(0, 0, 0, 0.2);*/
+  /*background:#774cce;*/
+  background:#ff4545;
+  font-weight: bold;
+  /*box-shadow: 0 4px 5px 0px #454545;*/
+}
+
+.promotion-section .timer .days:after,
+.promotion-section .timer .hours:after,
+.promotion-section .timer .minutes:after,
+.promotion-section .timer .seconds:after{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+  left: 0;
+  border-top: 1px solid #fff;
+  font-weight: bold;
+}
+
+.promotion-section .timer .days:after {
+  content:"Days";
+}
+
+.promotion-section .timer .hours:after {
+  content:"Hours";
+}
+
+.promotion-section .timer .minutes:after {
+  content:"Min";
+}
+
+.promotion-section .timer .seconds:after {
+  content:"Sec";
+}
+
+.promotion-section > span {
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.promotion-section > span:first-child {
+  font-size:24px;
+}
+
+.promotion-section > span strong {
+  border-bottom:0;
+  text-shadow: 0px 2px 2px #ff4545;
+}
