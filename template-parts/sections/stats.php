@@ -12,7 +12,7 @@
 					<div class="col-xs-12 col-sm-6">
 						<div class="stats-section__stat mb-3">
 							<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/installations.svg">
-							<h6 class="mb-0">90,000+</h6>
+							<h6 class="mb-0">100,000+</h6>
 							<p class="mb-0">active installations</p>
 						</div><!-- stats-section__stat -->
 					</div><!-- col -->

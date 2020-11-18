@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="section__heading row justify-content-center">
 			<div class="col-lg-6 text-center">
-				<h2>Join over 90,000 people using<br/>Strong Testimonials<span class="has-primary-color">.</span></h2>
+				<h2>Join over 100,000 people using<br/>Strong Testimonials<span class="has-primary-color">.</span></h2>
 			</div>
 		</div>
 
