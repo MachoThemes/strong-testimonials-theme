@@ -1,8 +1,5 @@
 const path                      = require('path');
-//const ExtractTextPlugin       = require('extract-text-webpack-plugin');
-//const UglifyJSPlugin            = require('uglifyjs-webpack-plugin');
 const OptimizeCssAssetsPlugin   = require('optimize-css-assets-webpack-plugin');
-const BrowserSyncPlugin         = require('browser-sync-webpack-plugin');
 const CssEntryPlugin            = require('css-entry-webpack-plugin');
 
 const config = {
@@ -36,24 +33,6 @@ const config = {
 			  filename: "/css/[name].css"
 			}
 		}),
-		//new ExtractTextPlugin('/css/[name].css'),
-		new BrowserSyncPlugin({
-			proxy: 'localhost/',
-		    port: 3000,
-		    files: [ '**/*.php' ],
-		    ghostMode: {
-		        clicks: false,
-		        location: false,
-		        forms: false,
-		        scroll: false
-		    },
-		    injectChanges: true,
-		    logFileChanges: true,
-		    logLevel: 'debug',
-		    logPrefix: 'wepback',
-		    notify: false,
-		    reloadDelay: 0
-		})
 	]
 };
 
