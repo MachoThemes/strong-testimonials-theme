@@ -40,13 +40,27 @@
 		font-size: 16px;
 	}
 
-	#edd_checkout_cart_wrap {
+	/*#edd_checkout_cart_wrap {
 		margin-top: rem(-70px);
 	}
-
+*/
 	#edd_checkout_cart_form {
 		box-shadow: 0px -6px 25px -10px rgba(128, 144, 174, 0.4);
 		border-radius: 10px;
+	}
+
+	header.header {
+		box-shadow:none;
+		background:transparent;
+		padding-top: 3rem;
+
+		.header__content {
+			margin:0 auto;
+		}
+	}
+
+	.title-wrap {
+		padding-top:20px;
 	}
 
 }

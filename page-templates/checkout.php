@@ -1,57 +1,21 @@
 <?php /* Template Name: Checkout */ ?>
 
-<?php get_header('2'); ?>
+<?php get_header( 'checkout' ); ?>
 
 <?php
-	$payment_mode = edd_get_chosen_gateway();
-	$form_action  = esc_url( edd_get_checkout_uri( 'payment-mode=' . $payment_mode ) );
+$payment_mode = edd_get_chosen_gateway();
+$form_action  = esc_url( edd_get_checkout_uri( 'payment-mode=' . $payment_mode ) );
 ?>
 
-<section class="section title-section py-5">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-md-6">
-				<h1 class="h2 text-center">Complete Your Purchase<span class="has-primary-color">.</span></h1>
-				<p class="mb-0 text-center">You’re just 60 seconds away from powerful, easy-to-use testimonials.</p>
-
-				<div class="row checkout-badges align-items-center mt-4 mb-4">
-					<div class="col-6 col-sm-3 text-center mb-3 mb-sm-0">
-						<div title="SSL Encrypted Payment" class="checkout-badges__ssl">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/ssl.svg' ); ?>
-						</div>
-					</div>
-					<div class="col-6 col-sm-4 text-center mb-3 mb-sm-0">
-						<div title="14 Day Moneyback Guarantee" class="checkout-badges__cc">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/moneyback.svg' ); ?>
-						</div>
-					</div>
-					<div class="col-6 col-sm-2 text-center">
-						<div title="Norton Secured Transaction" class="checkout-badges__norton">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/norton-secured.svg' ); ?>
-						</div>
-					</div>
-					<div class="col-6 col-sm-3 text-center">
-						<div title="McAfee Secured Transaction" class="checkout-badges__mcafee">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/mcafee.svg' ); ?>
-						</div>
-					</div>
-				</div><!-- row -->
-
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="section main-section py-5">
+<section class="main">
 	<div class="container">
 		<div class="row justify-content-center">
 
-			<?php if ( function_exists('edd_get_cart_contents') && edd_get_cart_contents() ) : ?>
+			<?php if ( function_exists( 'edd_get_cart_contents' ) && edd_get_cart_contents() ) { ?>
 
-				<div class="col-lg-7">
-
+			<div class="col-sm-12 title-wrap justify-content-center">
+				<div class="col-lg-9 col-lg-offset-2">
 					<?php edd_checkout_cart(); ?>
-
 					<div id="edd_checkout_form_wrap" class="edd_clearfix">
 						<?php do_action( 'edd_before_purchase_form' ); ?>
 						<form id="edd_purchase_form" class="edd_form" action="<?php echo $form_action; ?>" method="POST">
@@ -66,7 +30,7 @@
 							if ( edd_is_ajax_disabled() && ! empty( $_REQUEST['payment-mode'] ) ) {
 								do_action( 'edd_purchase_form' );
 							} elseif ( edd_show_gateways() ) {
-								do_action( 'edd_payment_mode_select'  );
+								do_action( 'edd_payment_mode_select' );
 							} else {
 								do_action( 'edd_purchase_form' );
 							}
@@ -86,19 +50,41 @@
 
 				</div><!-- col -->
 
-			<?php else: ?>
+				<!--<div class="col-lg-9 col-lg-offset-2">
+					<div class="checkout-testimonial testimonial footer-testimonial">
+						<div class="testimonial-photo">
+							<?php /*echo wp_get_attachment_image(232408, "thumbnail", false, array('class' => 'testimonial__avatar')); */?>
+						</div>
+						<div class="testimonial__content mb-3">
+							<p class="mb-0">Finally a beautiful looking image gallery plugin with a development team
+								that actually cares about web performance. If you’re looking to showcase your images
+								and care about the speed of your website, this is the plugin for you.</p>
+							<p class="testimonial__title mb-0">— Brian Jackson - Kinsta</p>
+						</div>
+					</div> testimonial
+				</div>-->
 
-				<div class="col-sm-12 title-wrap">
-					<div class="text-center">
-						<p class="empty-cart">Your cart is empty</p>
-						<a class="button" href="<?php echo esc_url( get_permalink( get_page_by_path( 'pricing' ) ) ); ?>">Buy Strong Testimonials</a>
-					</div>
+				<div class="col-lg-5"> <!--right hand side checkout details -->
+
+					<?php } else { ?>
+
+						<div class="col-sm-12 title-wrap">
+							<h1 class="h3 text-center">Checkout</h1>
+							<div class="text-center">
+								<p class="empty-cart">Your cart is empty</p>
+								<a class="button" href="<?php echo esc_url( get_permalink( get_page_by_path( 'pricing' ) ) ); ?>">Buy Modula Gallery</a>
+								<div>
+									<img width="600" src="<?php echo get_template_directory_uri(); ?>/assets/images/illustration-13.svg" alt="Cart">
+								</div>
+							</div>
+						</div>
+
+					<?php } ?>
+
 				</div>
-
-			<?php endif; ?>
-
-		</div>
-	</div>
+			</div>
 </section>
 
-<?php get_footer(); ?>
+<?php wp_footer(); ?>
+<?php get_template_part( 'template-parts/sections/footer-simple' ); ?>
+

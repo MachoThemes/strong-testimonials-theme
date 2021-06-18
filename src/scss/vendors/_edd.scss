@@ -1,0 +1,966 @@
+/* EDD Styling begins here */
+/* right sidebar */
+#edd_checkout_cart_wrap {
+	background-color: #FFF;
+	overflow: hidden;
+        border: none;
+        box-shadow: 4px 4px 0 0 #cfd9e6;
+        
+        #edd_checkout_cart {
+            border-top: 20px solid #fff;
+            margin: 0;
+            td, tr, th {
+                border: none;
+            }
+            td {
+                color: #000;
+                vertical-align: middle;
+                line-height: 25px;
+                padding: 0.5em 1.387em;
+            }
+        }
+        
+	.edd_cart_item,
+	.edd_cart_footer_row {
+		padding: 15px 0;
+                .edd_checkout_cart_item_title, .edd_cart_item_price {
+                    font-weight: 700;
+                    font-size: 19px;
+                }
+                
+                .edd_cart_item_price {
+                    padding-right: 100px !important;
+                    float: right;
+                    margin-top: 10px;
+                }
+                
+                .edd_cart_remove_item_btn > span {
+                    width: 10px;
+                    height: 10px;
+                    &:before {
+                        background-image: url(../images/icons/cancel.png);
+                    }
+                }
+                
+                @media screen and (max-width: 768px) { 
+                    .edd_cart_discount {
+                        display: block;
+                        width: 100%;
+                        .edd_discount { 
+                            width: 80%;
+                            text-align: left;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+                
+                .edd_discount {
+                    display: inline-block;
+                    width: 41%;
+                    float: left;
+                    text-align: right;
+                    .discount-rate {
+                        color: #2794da;
+                        line-height: 1;
+                        font-size: .87rem;
+                        margin-right: 3px;
+                    }
+                    .discount-code {
+                        display: inline;
+                        text-transform: uppercase;
+                        font-size: .87rem;
+                        line-height: 1;
+                        margin-bottom: 5px;
+                        color: #000;
+                    }
+                }
+                
+                .edd_discount_remove {
+                    display: block;
+                    float: right;
+                    width: 10px;
+                    height: 10px;
+                    background-image: url(../images/icons/cancel.png);
+                    background-size: cover;
+                    margin-top: 6px;
+                    &:hover {
+                        background-position: initial;
+                        background-image: url(../images/icons/cancel-hover.png);
+                    }
+                }
+                
+                .edd_cart_actions.discount_actions {
+                    padding-right: 32px;
+                }
+                
+                .edd_cart_total {
+                    padding-right: 99px;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                
+                .edd_cart_tax {
+                    padding-bottom: 20px;
+                }
+                
+                &.edd_cart_footer_row_total {
+                    background: #f4f7fa;
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    border-width: 1px 0 !important;
+                    border-style: solid !important;
+                    border-color: #eee !important;
+                    .edd_cart_total_text {
+                        padding-left: 23px;
+                        color: #666;
+                        text-align: left;
+                    }
+                }
+                
+	}
+
+	.edd_cart_header_row {
+                background: #f4f7fa;
+                color: #1e242d;
+                padding: 1rem 1.3rem;
+                margin-bottom: 0;
+                font-weight: 700;
+                font-size: 20px;
+	}
+
+	.edd_cart_header_row h4 {
+		margin-bottom: 0;
+	}
+
+	.edd_cart_footer_row {
+		&:last-of-type {
+			border-top: 5px solid #EEE;
+		}
+	}
+
+
+	.eddr-cart-item-notice {
+		color: #666;
+	}
+
+	.edd_cart_remove_item_btn {
+		color: #aaa;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-weight: 600;
+		float: right;
+		padding: 2px 10px;
+		text-decoration: none;
+
+		&:hover {
+			color: $accent-color-1;
+			border-color: $accent-color-1;
+		}
+	}
+    .edd_cart_discount {
+        padding-bottom: 30px;
+    }
+    .edd_cart_discount span.edd_discount {
+        padding-right: 95px !important;
+    }
+	.edd_cart_subtotal,
+	.edd_cart_discount,
+	.edd_cart_tax,
+	.edd_cart_total {
+            padding-left: 7px;
+            font-weight: 700;
+            font-size: 14px;
+	}
+
+	.edd_cart_subtotal_amount,
+	.edd_cart_tax_amount,
+	.edd_cart_discount_amount,
+	.edd_cart_amount {
+		font-weight: 700;
+		color: #666;
+		text-align: left;
+	}
+
+	.edd_cart_amount,
+	.edd_cart_total {
+		color: #5333ED;
+		font-size: 22px;
+		text-align: right;
+	}
+        
+        .edd_cart_tax_row {
+            width: 50%;
+        }
+}
+input.edd-apply-discount,
+#edd-add-license-renewal {
+    border: none;
+}
+
+/* left sidebar */
+#edd_checkout_form_wrap {
+	fieldset {
+		margin: 0;
+	}
+                        
+    input[type="radio"] {
+        margin-right: 10px;
+    }
+    
+    #edd_sl_renewal_form, #edd_purchase_form, #edd_sl_cancel_renewal_form {
+        > p {
+            border: 1px solid #eee;
+            border-left: 1px solid #ddd !important;
+            padding: 0.5em 1.387em;
+            background-color: #fff;
+            box-shadow: 4px 4px 0 0 #cfd9e6;
+            input.edd-submit {
+                border: none;
+                color: #292e37;
+                box-shadow: none;
+                background: #fff;
+                padding: 0;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        #edd_sl_renewal_fields, #edd_discount_code {
+            border-bottom: 1px solid #f0f0f0;
+            padding: 0.5em 1.387em;
+            background-color: #fff;
+            box-shadow: 4px 4px 0 0 #cfd9e6;
+            a {
+                font-size: 14px;
+                font-weight: 400;
+                color: #292e37;
+                text-decoration: underline;
+            }
+            p {
+                color: #666;
+                font-size: 16px;
+                font-weight: 700;
+                border: none;
+                padding: 0;
+                background-color: #fff;
+                margin: 0;
+            }
+            input[type="text"] {
+                box-shadow: none;
+                max-height: 35px;
+                margin-bottom: 6px;
+                max-width: 275px;
+                display: inline-block;
+                font-size: .87rem;
+                line-height: 1;
+                padding: .5rem;
+                height: 2rem;
+                vertical-align: unset;
+                color: #35495c !important;
+                background-color: #f4f7fa !important;
+                border: 1px solid #cfd9e6 !important;
+                height: unset !important;
+                border-radius: 0;
+            }
+            input[type="submit"] {
+                padding: 6px 12px;
+                border-radius: 0;
+            }
+        }
+    }
+}
+
+#edd_payment_mode_select_wrap {
+    box-shadow: 4px 0px 0 0 #cfd9e6;
+    padding: 0 !important;
+    border: none !important;
+    #edd_payment_mode_select {
+        padding: 0;
+        border: none !important;
+        legend {
+            background: #f4f7fa;
+            color: #1e242d;
+            padding: 1rem 1.5rem;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+    
+    #edd-payment-mode-wrap {
+        padding: 29px 150px 29px 150px;
+    }
+}
+
+#edd-discount-code-wrap > label {
+    color: #666 !important;
+    font-weight: 700;
+}
+
+.edd-stripe-card-radio-item.existing-card-wrapper.selected {
+    clear: left;
+    background-color: #f4f7fa;
+}
+
+#edd_checkout_user_info,
+#edd_cc_fields,
+#edd_cc_address {
+    padding: 30px 150px 30px 150px !important;
+    border-left: none;
+}
+
+#edd_purchase_form_wrap {
+    box-shadow: 4px 4px 0 0 #cfd9e6;
+    margin-top: -4px;
+    background-color: #fff;
+    fieldset {
+        border-left: 0px !important;
+    }
+    .edd-loading-ajax.edd-loading {
+        display: block;
+        margin: 0 auto 0 auto;
+        width: 18px;
+    }
+}
+
+#edd_payment_mode_select_wrap,
+#edd_checkout_user_info,
+#edd_cc_fields,
+#edd_cc_address {
+	padding: 13px 20px 20px 20px;
+	background-color: #FFF;
+	overflow: hidden;
+	border: 1px solid #DDD;
+}
+
+#edd_cc_fields {
+	padding-bottom: 2px !important;
+        background-image: none;
+}
+
+#edd_payment_mode_select legend:before,
+#edd_checkout_user_info legend:before,
+#edd_cc_fields legend:before,
+#edd_cc_address legend:before {
+	margin-right: 5px;
+	width: 50px;
+	height: 50px;
+}
+
+.edd_sl_renewal_row td {
+    float: left;
+    font-weight: 600;
+}
+
+.edd-description {
+	display: none !important;
+}
+
+#edd_cc_fields {
+	background-image: url('../images/checkout-badges/secure-stripe@2x.png') !important;
+	background-repeat: no-repeat !important;
+        background-size: 150px !important;
+        background-position: 80% 35px !important;
+        @media screen and (max-width: 768px) {
+            background-position: 20px 48px !important;
+        }
+        
+}
+
+#edd_cc_address legend,
+#edd_cc_fields legend,
+#edd_checkout_form_wrap fieldset#edd_cc_fields legend,
+#edd_checkout_user_info legend,
+#edd_payment_mode_select legend,
+#edd_register_account_fields legend {
+	border: 0;
+	color: #666;
+	float: left;
+	font-size: 20px;
+	font-weight: 700;
+        line-height: 25px;
+	text-transform: capitalize;
+	margin-bottom: 13px;
+	padding-bottom: 14px;
+}
+
+#edd_checkout_form_wrap fieldset#edd_cc_address {
+    border:none;
+}
+
+#edd_checkout_form_wrap #edd_cc_fields,
+#edd_checkout_form_wrap fieldset#edd_cc_fields {
+	background: #fff;
+        padding-bottom: 30px !important;
+}
+
+#edd_secure_site_wrapper {
+	display: none;
+	padding: 4px 4px 4px 0;
+	font-weight: 700;
+	color: #2b901b;
+	margin-bottom: 20px;
+
+	.padlock {
+		fill: #5333ED;
+		position: relative;
+		top: 0.25rem;
+	}
+}
+
+
+#edd-first-name-wrap {
+	width: 48%;
+	margin-right: 2%;
+	display: inline-block;
+}
+
+#edd-last-name-wrap {
+	width: 49%;
+	display: inline-block;
+}
+
+#edd_checkout_form_wrap span.edd-required-indicator {
+	color: #b94a48;
+	display: inline;
+}
+
+#edd_checkout_form_wrap select.edd-select {
+    width: 100%;
+}
+
+body #edd_checkout_form_wrap input[type=email],
+body #edd_checkout_form_wrap input[type=password],
+body #edd_checkout_form_wrap input[type=tel],
+body #edd_checkout_form_wrap input[type=text],
+body #edd_checkout_form_wrap textarea,
+body #edd_checkout_form_wrap select {
+	width: 100%;
+	margin-bottom: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #DDD;
+	border-radius: 1px;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	background-color: #f4f7fa;
+	border-top: 1px solid #ededed;
+	color: #464a4d;
+	font-size: 16px;
+	text-align: left;
+	padding: 10px;
+
+}
+
+body #edd_checkout_form_wrap select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	-ms-appearance: none;
+	background: #f4f7fa url('../images/icons/down-arrow.png') right .5em center no-repeat;
+	-webkit-background-size: 16px 16px;
+	background-size: 16px 16px;
+	border-top: 1px solid #ededed;
+	padding: 10px 27px 10px 10px;
+	max-width: 100%;
+	text-indent: .01px;
+	text-overflow: '';
+	margin-bottom: 5px;
+	font-weight: inherit;
+	color: #464a4d;
+	font-size: 14px;
+	width: 100%;
+}
+
+#edd_convertkit,
+#edd-card-address-2-wrap {
+	display: none;
+}
+
+#edd_purchase_submit {
+    background: #f4f7fa;
+    box-shadow: 4px 4px 0 0 #cfd9e6;
+    padding: 20px 150px 40px 150px !important;
+}
+
+#edd_purchase_submit #edd-purchase-button,
+#edd_purchase_submit .edd-submit,
+#edd_purchase_submit input[type=submit].edd-submit {
+	background: #5333ED;
+	display: block;
+	border-radius: 3px;
+	padding: 15px 35px;
+	width: 100%;
+	cursor: pointer;
+	color: #fff;
+	font-weight: 700;
+	position: relative;
+	font-size: 20.8px;
+	text-transform: none;
+	letter-spacing: 0;
+	box-shadow: none;
+    border: none;
+
+	&:hover {
+		background: #5333ED;
+	}
+}
+
+#edd_final_total_wrap {
+	display: none;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	color: #4e555d;
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+
+
+#edd_checkout_form_wrap {
+	label {
+		font-size: 14px;
+                color: #788898;
+		text-transform: capitalize;
+	}
+
+	fieldset {
+		#edd-first-name-wrap,
+		#edd-last-name-wrap,
+		#edd-card-country-wrap,
+		#edd-card-state-wrap {
+			margin-bottom: 0;
+		}
+
+		p#edd-card-state-wrap,
+		p#edd-card-zip-wrap,
+		p#edd-last-name-wrap {
+			display: inline-block;
+			width: 49%;
+			margin-bottom: 0;
+		}
+
+		p#edd-first-name-wrap,
+		p#edd-card-country-wrap,
+		p#edd-card-city-wrap {
+			width: 48%;
+			display: inline-block;
+			margin-right: 2%;
+		}
+	}
+}
+
+
+#edd_checkout_form_wrap #edd-payment-mode-wrap label.edd-gateway-option-selected {
+	border: 1px solid #d6d6d6;
+	border-radius: 3px;
+        background-color: #fff !important;
+        opacity: 1;
+        filter: grayscale(0);
+}
+
+#edd_checkout_form_wrap #edd-payment-mode-wrap label {
+        width: 100%;
+	padding: 10px;
+	position: relative;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 1px solid #d6d6d6;
+	text-transform: none;
+	letter-spacing: 0;
+        background-color: #f4f7fa !important;
+        filter: grayscale(1);
+        opacity: 0.5;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+}
+
+#edd_checkout_form_wrap #edd-payment-mode-wrap label {
+	display: block;
+        margin-bottom: 15px;
+}
+
+#edd-gateway-option-stripe {
+	width: 48%;
+	margin-right: 1% !important;
+	background: url('../images/checkout-badges/cards.png') 135px 50% no-repeat #f8fafb !important;
+}
+
+#edd-gateway-option-paypal,
+#edd-gateway-option-paypalexpress {
+	width: 48%;
+	margin-right: 1% !important;
+	background: url('../images/checkout-badges/paypal.png') 85px 50% no-repeat !important;
+}
+
+#edd-gateway-option-stripe input,
+#edd-gateway-option-paypal input,
+#edd-gateway-option-paypalexpress input {
+	margin-right: 15px;
+}
+
+#edd_vat_info {
+	text-align: center;
+	color: #666;
+
+	#edd_show_vat_info {
+		margin-bottom: 0;
+	}
+}
+
+/* testimonial */
+.edd_testimonial_row {
+	overflow: hidden;
+	max-width: 100%;
+	margin: 20px auto 0 auto;
+	background-color: #66737d;
+	color: #FFF;
+	padding: 20px 4px;
+
+	.testimonial__stars {
+		color: yellow;
+	}
+
+	.testimonial_content {
+		margin-top: 12px;
+	}
+
+	.testimonial_name {
+		border-top: 1px solid rgba(255, 255, 255, .3);
+		padding-top: 12px;
+		margin-top: 12px;
+		font-style: italic;
+		font-size: 0.765rem;
+		font-weight: 400;
+	}
+}
+
+/* checklist */
+.edd_checklist_row {
+	max-width: 100%;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: #FFF;
+	padding: 20px;
+	border: 1px solid #DDD;
+
+	ul {
+
+		padding-left: 0;
+
+		li {
+			list-style: none;
+
+			i {
+				margin-right: 10px;
+			}
+		}
+	}
+}
+
+/* badges */
+.edd_badges_row {
+	max-width: 100%;
+	margin: 20px auto 0 auto;
+	background-color: #fff;
+	border: 1px solid #DDD;
+	padding: 20px 4px;
+}
+
+/* testimonials */
+.checkout-testimonial.testimonial{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    display: inline-block;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    
+    .testimonial__content.mb-3,
+    .testimonial__name {
+        color: #637586;
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    
+   .testimonial__title  {
+        color: #637586;
+        float: right;
+    }
+    
+    .testimonial-photo img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    .footer-testimonial {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .checkout-testimonial.testimonial{
+        .testimonial-photo {
+            width: 25%;
+            display: inline-block;
+            float: left 
+
+        }
+             
+        .testimonial__content {
+            width: 75%;
+            display: inline-block;
+            float: left;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .checkout-testimonial.testimonial {
+        padding-bottom: 32px;
+    }
+    .testimonial-photo img {
+        margin-bottom: 10px !important;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* footer */
+.page-checkout {
+    
+    .footer-cart-total {
+        border-top: 1px solid #f0f0f0;
+        font-size: 24px;
+        background: #f4f7fa;
+        padding-top: 40px;
+        text-align: center;
+        
+        .footer-message {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+         
+        .edd_cart_total_text,
+        .footer-message {
+            font-weight: 900;
+            color: #666;
+        }
+        
+        .edd_cart_amount {
+            font-weight: 700;
+            color: #5333ED;
+        }
+    } 
+    
+    .main {
+        padding: 0;
+    }
+    
+    .footer {
+        padding: 35px 15px 24px 15px;
+    }
+    
+    .footer-section {
+        color: #637586;
+        background: #f6f6f6;
+    }
+}
+
+.icon-cancel:hover {
+    background-image: url(../images/icons/cancel-hover.png);
+}
+
+@media screen and (max-width: 768px) {
+    #edd-payment-mode-wrap,
+    #edd_checkout_user_info,
+    #edd_cc_fields,
+    #edd_cc_address,
+    #edd_purchase_submit {
+        padding: 1.387em !important;
+    }
+}
+@media screen and (max-width: 516px) {
+    #edd-first-name-wrap,
+    #edd-card-country-wrap {
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+    #edd-last-name-wrap,
+    #edd-card-zip-wrap {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 486px) {
+    #edd_purchase_submit #edd-purchase-button {
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+}
+
+/*  MyAccount Page  */
+
+.account-container {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    .login-title {
+        color: #35495c;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.4;
+        margin-bottom: 0 !important;
+        display: inline; 
+    }
+    .title-icon {
+        margin-right: 10px;
+        img { 
+            display: inline;
+            width: 40px;
+        }
+    }
+}
+
+.account-form-container {
+    form {
+        width: 47%;
+        padding: 2rem;
+        border: 1px solid #DDD;
+        margin: 0 auto;
+        display: block;
+        
+        .edd-login-password {
+            margin-bottom: 7px !important;
+        }
+        
+        .edd-login-username label,
+        .edd-login-password label {
+            color: #35495c;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .edd-login-remember {
+            color: #35495c;
+            float: none !important; 
+        }
+        
+        .edd-login-submit  {
+            clear: none !important;
+        }
+        #edd_login_submit {
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1;
+            font-size: 17px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            border: none;
+        }
+        
+        .edd-lost-password {
+            margin-top: 5.5%;
+        }
+    }
+}
+
+p.edd-logged-out {
+    display: none;
+}
+
+#edd_login_form {
+    fieldset {
+        h3 {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    tr.edd_cart_footer_row.edd_cart_footer_row_total {
+        width: 100% !important;
+        display: table !important;
+    }
+    th.edd_cart_total.edd_cart_total_text {
+        width: 100% !important;
+    }
+    .edd_cart_amount {
+        padding-left: 18px;
+    }
+    #edd_checkout_cart {
+        .edd_cart_total{
+            padding-bottom: 0 !important;
+            float: left;
+            th:nth-child(2) {
+              padding-top: 0 !important;
+            }
+        }
+    }
+    #edd_checkout_cart {
+        .edd_cart_total{ 
+            padding-right: 0 !important;
+        }
+    }
+    #edd_checkout_cart_wrap #edd_checkout_cart {
+        td, tr {
+            display: block;
+        }
+    }
+    .edd_cart_item {
+        td {
+            padding-top:0  !important;
+            margin-top: 0 !important;
+            display: block;
+            &.edd_cart_item_name {
+                float: left !important;
+                width: 100% !important;
+            }
+            &.edd_cart_item_price {
+                float: left !important;
+                width: 60% !important;
+            }
+            &.edd_cart_actions {
+                float: right !important;
+                width: 40% !important;
+            }
+        }
+        
+    }
+    #edd_checkout_cart th:nth-child(2) {
+        padding-top: 0 !important;
+        padding-bottom: 20px !important;
+    }
+    .account-form-container {
+        form {
+            width: 95%;
+        }
+    }    
+
+    #edd_checkout_cart > tfoot > tr.edd_cart_footer_row.edd_cart_discount_row > th.edd_cart_actions.discount_actions {
+        padding-top:14px !important;
+    }
+}
+
+//Form border
+#edd_checkout_cart_wrap,
+#edd_payment_mode_select_wrap {
+    border-top: 1px solid #ddd !important;
+
+}
+#edd_sl_renewal_fields,
+#edd_checkout_cart_wrap, 
+#edd_discount_code,
+#edd_payment_mode_select_wrap,
+#edd_purchase_form_wrap {
+    border-left: 1px solid #ddd !important;
+}
