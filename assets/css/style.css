@@ -3545,6 +3545,8 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
       margin: 0 auto; }
   .page-template-checkout .title-wrap {
     padding-top: 20px; }
+  .page-template-checkout #edd_purchase_form {
+    padding-top: 50px; }
 
 .page-template-account .main-section {
   font-size: 16px; }
