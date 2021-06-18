@@ -35,13 +35,13 @@
 						<?php echo do_shortcode('[edd_profile_editor]'); ?>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<!-- <div class="col-md-6">
 					<div class="rounded-box p-5">
 						<a class="anchor" name="download-history"></a>
 						<h3 class="mb-3">Download History</h3>
-						<?php echo do_shortcode('[download_history]'); ?>
+						<?php //echo do_shortcode('[download_history]'); ?>
 					</div>
-				</div>
+				</div> -->
 				<div class="col-md-6">
 					<div class="rounded-box p-5">
 						<h3 class="mb-3">Login Status</h3>
