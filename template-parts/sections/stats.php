@@ -2,9 +2,6 @@
 	<div class="container">
 
 		<div class="row align-items-center">
-			<div class="col-lg-6 mb-3 order-lg-1">
-				<img class="illustration float-lg-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/illustration-11.svg">
-			</div>
 			<div class="col-lg-6 order-lg-0">
 				<h2 class="mb-4">Join The Active Community of<br/>Users and Developers<span class="has-primary-color">.</span></h2>
 				<p class="mb-4">Meet the <strong>#1 WordPress Testimonial Plugin</strong> built by and for a strong community.</p>
@@ -38,6 +35,9 @@
 						</div><!-- stats-section__stat -->
 					</div><!-- col -->
 				</div><!-- row -->
+			</div>
+			<div class="col-lg-6 mb-3 order-lg-1">
+				<img class="illustration float-lg-left" src="<?php echo get_template_directory_uri(); ?>/assets/images/illustration-11.svg">
 			</div>
 		</div>
 

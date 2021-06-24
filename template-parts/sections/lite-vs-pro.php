@@ -19,15 +19,15 @@ $addons = st_get_all_extensions();
 			<div class="col-md-9">
 
 				<div class="pricing-table pricing-table--header row">
-					<div class="col-4">
+					<div class="col-xs-4">
 
 					</div>
-					<div class="col-4">
+					<div class="col-xs-4">
 						<h4 class="pricing-table__title">Agency, Business, Plus & Basic</h4>
 						<br />
 						<a class="button pricing-table__button" href="#pricing">Upgrade Now</a>
 					</div>
-					<div class="col-4">
+					<div class="col-xs-4">
 						<h4 class="pricing-table__title">Lite</h4>
 						<br />
 						<a style="opacity: 0; pointer-events:none" class="button pricing-table__button" href="https://wordpress.org/plugins/modula-best-grid-gallery/" target="_blank">Download Lite</a>
@@ -35,13 +35,13 @@ $addons = st_get_all_extensions();
 				</div><!-- row -->
 
 				<div class="pricing-table row">
-					<div class="col-4">
+					<div class="col-xs-4">
 						<span>Support</span>
 					</div>
-					<div class="col-4">
+					<div class="col-xs-4">
 						Dedicated Support
 					</div>
-					<div class="col-4">
+					<div class="col-xs-4">
 						w.org Forums
 					</div>
 				</div><!-- row -->
@@ -50,7 +50,7 @@ $addons = st_get_all_extensions();
 					<?php $addons->the_post(); ?>
 
 					<div class="row pricing-table <?php echo isset( $utm_medium ) && $utm_medium === get_post_field( 'post_name' ) ? 'pricing-table--highlight' : ''; ?>">
-						<div class="col-4">
+						<div class="col-xs-4">
 							<?php echo st_get_post_meta( get_the_id(), 'pricing_title' ) != '' ? st_get_post_meta( get_the_id(), 'pricing_title' ) : ltrim( get_the_title(), "Strong Testimonials" ); ?>
 
 							<?php if ( st_get_post_meta( get_the_id(), 'tooltip' ) != '' || has_excerpt() ): ?>
@@ -60,10 +60,10 @@ $addons = st_get_all_extensions();
 								</span>
 							<?php endif; ?>
 						</div>
-						<div class="col-4">
+						<div class="col-xs-4">
 							<i class="icon-ok"></i>
 						</div>
-						<div class="col-4">
+						<div class="col-xs-4">
 							<i class="icon-cancel"></i>
 						</div>
 					</div><!-- row -->
@@ -71,12 +71,12 @@ $addons = st_get_all_extensions();
 				<?php endwhile; ?>
 
 				<div class="pricing-table pricing-table--last row">
-					<div class="col-4">
+					<div class="col-xs-4">
 					</div>
-					<div class="col-4">
+					<div class="col-xs-4">
 						<a class="button pricing-table__button" href="#pricing">Upgrade Now</a>
 					</div>
-					<div class="col-4">
+					<div class="col-xs-4">
 					</div>
 				</div><!-- row -->
 
