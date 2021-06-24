@@ -8,7 +8,7 @@ define( 'ANTREAS_NAME', $theme['Name'] );
 define( 'ANTREAS_VERSION', $theme['Version'] );
 define( 'ANTREAS_ASSETS_CSS', get_template_directory_uri() . '/assets/css/' );
 define( 'ANTREAS_ASSETS_JS', get_template_directory_uri() . '/assets/js/' );
-define( 'ANTREAS_ASSETS_IMG', get_template_directory_uri() . '/assets/img/' );
+define( 'ANTREAS_ASSETS_IMG', get_template_directory_uri() . '/assets/images/' );
 define( 'ANTREAS_ASSETS_VENDORS', get_template_directory_uri() . '/assets/vendors/' );
 define( 'ANTREAS_CORE', get_template_directory() . '/core/' );
 define( 'ANTREAS_SHORTCODES', get_template_directory() . '/shortcodes/' );
@@ -17,6 +17,8 @@ define( 'ANTREAS_PREMIUM_URL', 'www.machothemes.com/theme/antreas/' );
 
 require_once ANTREAS_CORE . 'init.php';
 
+// EU VAT
+require_once ANTREAS_CORE . 'modula-vat-handle.php';
 /**
  * Removes the billing details section on the checkout screen.
  */
@@ -70,6 +72,16 @@ function modula_theme_checkout_submit() { ?>
 
 // Remove billing address
 add_filter( 'edd_require_billing_address', '__return_false' );
+
+add_filter( 'edd_get_cart_discount_html', 'modula_theme_get_cart_discount_html', 10, 4 );
+function modula_theme_get_cart_discount_html( $discount_html, $discount, $rate, $remove_url ) {
+	$discount_html = "<div class=\"edd_discount\">\n";
+	$discount_html .= "<span class=\"discount-rate\">$rate</span><span class=\"discount-code\">($discount)</span>\n";
+	$discount_html .= "</div>\n";
+	$discount_html .= "<div class=\"edd_cart_actions discount_actions\"><a href=\"$remove_url\" data-code=\"$discount\" class=\"edd_discount_remove\"></a></div>\n";
+
+	return $discount_html;
+}
 
 function modula_cc_address_fields() {
 

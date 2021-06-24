@@ -16,7 +16,7 @@
 							<div class="cta-box p-4 mb-4">
 								<h4 class="mb-4">Easily collect and display testimonials on your website<span class="has-primary-color">.</span></h4>
 								<a class="button button--small mb-0" href="<?php echo esc_url( get_permalink( get_page_by_path( 'pricing' ) ) ); ?>">Buy Strong Testimonials</a>
-								<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/illustration-6.svg' ); ?>
+								<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/illustration-6.svg' ); ?>
 							</div><!-- cta-box -->
 						</div><!-- post-sidebar -->
 

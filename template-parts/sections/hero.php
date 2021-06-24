@@ -13,7 +13,7 @@
 
 			<div class="col-lg-6">
 				<div class="hero-section__illustration">
-					<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/illustration-6.svg' ); ?>
+					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/illustration-6.svg' ); ?>
 				</div>
 			</div>
 

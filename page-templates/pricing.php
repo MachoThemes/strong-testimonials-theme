@@ -11,22 +11,22 @@
 				<div class="row checkout-badges align-items-center mt-3 mb-3">
 					<div class="col-6 col-sm-3 text-center mb-3 mb-sm-0">
 						<div title="SSL Encrypted Payment" class="checkout-badges__ssl">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/ssl.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/checkout-badges/ssl.svg' ); ?>
 						</div>
 					</div>
 					<div class="col-6 col-sm-4 text-center mb-3 mb-sm-0">
 						<div class="checkout-badges__cc">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/cc.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/checkout-badges/cc.svg' ); ?>
 						</div>
 					</div>
 					<div class="col-6 col-sm-2 text-center">
 						<div title="Norton Secured Transaction" class="checkout-badges__norton">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/norton-secured.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/checkout-badges/norton-secured.svg' ); ?>
 						</div>
 					</div>
 					<div class="col-6 col-sm-3 text-center">
 						<div title="McAfee Secured Transaction" class="checkout-badges__mcafee">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/checkout-badges/mcafee.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/checkout-badges/mcafee.svg' ); ?>
 						</div>
 					</div>
 				</div><!-- row -->

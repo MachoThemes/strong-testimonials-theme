@@ -10,7 +10,7 @@
 		<div class="row align-items-center">
 			<div class="col-lg-6">
 				<div class="illustration float-right mb-3 mb-lg-0">
-					<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/illustration-12.svg' ); ?>
+					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/illustration-12.svg' ); ?>
 				</div><!-- illustration -->
 			</div>
 			<div class="col-lg-6 px-lg-5 mb-3 mb-lg-0">
@@ -26,7 +26,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6 order-lg-1">
 					<div class="illustration mb-3 mb-lg-0">
-						<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/illustration-14.svg' ); ?>
+						<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/illustration-14.svg' ); ?>
 					</div><!-- illustration -->
 				</div>
 				<div class="col-lg-6 px-lg-5 order-lg-0 mb-3 mb-lg-0">
@@ -39,7 +39,7 @@
 			<div class="row align-items-center">
 				<div class="col-lg-6">
 					<div class="illustration float-right mb-3 mb-lg-0">
-						<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/illustration-10.svg' ); ?>
+						<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/illustration-10.svg' ); ?>
 					</div><!-- illustration -->
 				</div>
 				<div class="col-lg-6 px-lg-5 mb-3 mb-lg-0">
@@ -56,7 +56,7 @@
 		<div class="row align-items-center">
 			<div class="col-lg-6 order-lg-1">
 				<div class="illustration mb-3 mb-lg-1">
-					<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/illustration-13.svg' ); ?>
+					<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/illustration-13.svg' ); ?>
 				</div><!-- illustration -->
 			</div>
 			<div class="col-lg-6 px-lg-5 order-lg-0 mb-3 mb-lg-0">

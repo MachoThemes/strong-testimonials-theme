@@ -13,7 +13,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-1.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-1.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Pro Templates<div class="service__pro-label">PRO</div></h5>
@@ -26,7 +26,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-4.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-4.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Help if you need it</h5>
@@ -41,7 +41,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-12.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-12.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Testimonial Assignment<div class="service__pro-label">PRO</div></h5>
@@ -54,7 +54,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-5.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-5.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Multiple Layouts</h5>
@@ -70,7 +70,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/icons/ratings.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/icons/ratings.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">SEO-friendly Testimonials<div class="service__pro-label">PRO</div></h5>
@@ -83,7 +83,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-6.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-6.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Advanced View Settings<div class="service__pro-label">PRO</div></h5>
@@ -99,7 +99,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-9.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-9.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Multiple Submission Forms<div class="service__pro-label">PRO</div></h5>
@@ -113,7 +113,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-10.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-10.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Custom Form Fields<div class="service__pro-label">PRO</div></h5>
@@ -129,7 +129,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-11.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-11.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Custom Properties<div class="service__pro-label">PRO</div></h5>
@@ -143,7 +143,7 @@
 				<div class="service mb-5">
 					<div class="row">
 						<div class="col-md-3 text-center text-md-right mb-2">
-							<?php echo file_get_contents( get_template_directory_uri() . '/assets/img/services/service-13.svg' ); ?>
+							<?php echo file_get_contents( get_template_directory_uri() . '/assets/images/services/service-13.svg' ); ?>
 						</div>
 						<div class="col-md-9 text-center text-md-left">
 							<h5 class="mb-2">Spam Control<div class="service__pro-label">PRO</div></h5>

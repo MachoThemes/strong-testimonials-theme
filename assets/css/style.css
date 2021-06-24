@@ -471,7 +471,7 @@ input[type=submit] {
 .button--download-icon {
   background-color: #5333ED;
   border-color: #5333ED;
-  background-image: url(../img/download-icon.svg);
+  background-image: url(../images/download-icon.svg);
   background-repeat: no-repeat;
   background-position: 20px 48%;
   background-size: 22px;
@@ -595,49 +595,49 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
   background-position: 50% 50%; }
 
 .icon-down-open-big, .main-menu .menu-arrow {
-  background-image: url(../img/icons/down-arrow.svg); }
+  background-image: url(../images/icons/down-arrow.svg); }
 
 .icon-plus, .accordion__title:after {
-  background-image: url(../img/icons/plus.svg); }
+  background-image: url(../images/icons/plus.svg); }
 
 .icon-minus, .accordion--opened .accordion__title:after {
-  background-image: url(../img/icons/minus.svg); }
+  background-image: url(../images/icons/minus.svg); }
 
 .icon-ok, ul.list--checkmark li:before {
-  background-image: url(../img/icons/checkmark.svg); }
+  background-image: url(../images/icons/checkmark.svg); }
 
 .icon-left-open-big, .nav-links .prev:before {
-  background-image: url(../img/icons/left-arrow.svg); }
+  background-image: url(../images/icons/left-arrow.svg); }
 
 .icon-right-open-big, .nav-links .next:before {
-  background-image: url(../img/icons/right-arrow.svg); }
+  background-image: url(../images/icons/right-arrow.svg); }
 
 .icon-cancel, .topbar-section__close, .modal__close {
-  background-image: url(../img/icons/cancel.svg); }
+  background-image: url(../images/icons/cancel.svg); }
 
 .icon-search, .doc-search:before {
-  background-image: url(../img/icons/search.svg); }
+  background-image: url(../images/icons/search.svg); }
 
 .icon-docs, ul.list--docs li:before {
-  background-image: url(../img/icons/docs.svg); }
+  background-image: url(../images/icons/docs.svg); }
 
 .icon-twitter {
-  background-image: url(../img/icons/twitter.svg); }
+  background-image: url(../images/icons/twitter.svg); }
 
 .icon-youtube {
-  background-image: url(../img/icons/youtube.svg); }
+  background-image: url(../images/icons/youtube.svg); }
 
 .icon-question-circle {
-  background-image: url(../img/icons/question-circle.svg); }
+  background-image: url(../images/icons/question-circle.svg); }
 
 .icon-quotes {
-  background-image: url(../img/icons/quotes.svg); }
+  background-image: url(../images/icons/quotes.svg); }
 
 .icon-infinite {
-  background-image: url(../img/icons/infinite.svg); }
+  background-image: url(../images/icons/infinite.svg); }
 
 .icon-pen {
-  background-image: url(../img/icons/pen.svg); }
+  background-image: url(../images/icons/pen.svg); }
 
 /* =Grid
    ========================================================================== */
@@ -3686,7 +3686,7 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
 .logo-link {
   width: 205px;
   height: 80px;
-  background: url(../img/logo.svg) no-repeat 50% 50%;
+  background: url(../images/logo.svg) no-repeat 50% 50%;
   background-size: 100%;
   display: inline-block; }
 
@@ -3698,7 +3698,7 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
   .hero-section .stars {
     width: 94px;
     height: 20px;
-    background: url(../img/star.svg) repeat-x 50% 50%;
+    background: url(../images/star.svg) repeat-x 50% 50%;
     background-size: 20%;
     display: inline-block;
     vertical-align: top; }
@@ -3829,7 +3829,7 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
   padding-bottom: 30px; }
 
 .title-section {
-  background: url(../img/illustration-4.svg) no-repeat 50% 38%;
+  background: url(../images/illustration-4.svg) no-repeat 50% 38%;
   background-size: cover; }
 
 .title-single__title {
@@ -3920,7 +3920,7 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
   color: #292a2a; }
 
 .pricing-section {
-  background: url(../img/illustration-7.svg) no-repeat 44% 33%;
+  background: url(../images/illustration-7.svg) no-repeat 44% 33%;
   background-size: 110%; }
   .pricing-section .pricing-message {
     background: #fff;
@@ -4529,7 +4529,7 @@ img {
 .testimonials-section .testimonial__stars {
   width: 94px;
   height: 20px;
-  background: url(../img/star.svg) repeat-x 50% 50%;
+  background: url(../images/star.svg) repeat-x 50% 50%;
   background-size: 20%;
   position: relative; }
 
@@ -4614,7 +4614,7 @@ img {
   .pricing-table .icon-ok, .pricing-table ul.list--checkmark li:before, ul.list--checkmark .pricing-table li:before {
     width: 13px;
     height: 13px;
-    background-image: url(../img/icons/checkmark--green.svg); }
+    background-image: url(../images/icons/checkmark--green.svg); }
   .pricing-table .icon-question-circle {
     cursor: help;
     opacity: 0.4;
@@ -4623,7 +4623,7 @@ img {
   .pricing-table .icon-cancel, .pricing-table .topbar-section__close, .pricing-table .modal__close {
     width: 10px;
     height: 10px;
-    background-image: url(../img/icons/cancel--red.svg); }
+    background-image: url(../images/icons/cancel--red.svg); }
 
 .pricing-table > div {
   text-align: center;
