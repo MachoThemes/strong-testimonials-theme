@@ -29,7 +29,7 @@
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : ?>
 					<?php the_post(); ?>
-					<div class="col-md-6 col-xl-4">
+					<div class="col-md-6 col-lg-4">
 						<?php get_template_part( 'template-parts/post' ); ?>
 					</div>
 				<?php endwhile; ?>

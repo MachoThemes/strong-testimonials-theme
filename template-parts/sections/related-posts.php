@@ -23,7 +23,7 @@
 		<div class="row row--medium-gutters justify-content-center">
 			<?php while ( $related->have_posts() ) : ?>
       			<?php $related->the_post(); ?>
-				<div class="col-md-6 col-xl-4">
+				<div class="col-md-6 col-lg-4">
 					<?php get_template_part( 'template-parts/post-related' ); ?>
 				</div>
 			<?php endwhile; ?>
