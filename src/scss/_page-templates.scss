@@ -172,6 +172,15 @@
 		}
 	}
 
+	.main{
+		> .container {
+			> .row {
+				margin-bottom:4rem;
+				align-items: center;
+			}
+		}
+	}
+
 }
 
 .page-template-knowledgebase {
