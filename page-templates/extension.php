@@ -10,7 +10,7 @@
 			<?php if ( have_posts() ) : ?>
 				<?php while ( have_posts() ) : ?>
 					<?php the_post(); ?>
-					<div class="col-xl-3 order-1 order-xl-0">
+					<div class="col-lg-3 order-1 order-lg-0">
 
 						<div class="post-sidebar">
 							<div class="cta-box p-4 mb-4">
@@ -21,10 +21,10 @@
 						</div><!-- post-sidebar -->
 
 					</div>
-					<div class="post-content col-xl-6 order-xl-1">
+					<div class="post-content col-lg-6 order-lg-1">
 						<?php the_content(); ?>
 					</div>
-					<div class="col-xl-3 order-2 order-xl-2">
+					<div class="col-lg-3 order-2 order-lg-2">
 						<div class="testimonial mb-3">
 							<div class="d-flex justify-content-start mb-3">
 								<div class="testimonial__stars"></div>

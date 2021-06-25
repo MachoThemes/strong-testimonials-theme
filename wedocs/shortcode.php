@@ -3,7 +3,7 @@
 <div class="docs row">
 
 	<?php foreach ($docs as $main_doc) : ?>
-		<div class="col-md-6 col-xl-4 mb-4">
+		<div class="col-md-6 col-lg-4 mb-4">
 
 			<div class="docs-single">
 				<div class="docs-single__header text-center">

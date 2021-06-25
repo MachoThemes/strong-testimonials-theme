@@ -29,7 +29,7 @@
 
 		<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-			<div class="col-md-6 col-xl-4 mb-4">
+			<div class="col-md-6 col-lg-4 mb-4">
 
 				<div class="docs-single">
 					<div class="docs-single__header text-center">
