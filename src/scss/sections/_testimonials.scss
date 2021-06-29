@@ -1,3 +1,10 @@
-.testimonials-section{
-	background: #F8F8F8;
+.testimonials-section {
+  background: #F8F8F8;
+
+  .testimonials-section-3 {
+    .testimonial__stars {
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+  }
 }

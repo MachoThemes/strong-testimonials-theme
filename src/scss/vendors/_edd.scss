@@ -347,6 +347,10 @@ input.edd-apply-discount,
 	height: 50px;
 }
 
+#edd_checkout_user_info {
+  border-right: 0;
+}
+
 .edd_sl_renewal_row td {
     float: left;
     font-weight: 600;
@@ -963,4 +967,22 @@ p.edd-logged-out {
 #edd_payment_mode_select_wrap,
 #edd_purchase_form_wrap {
     border-left: 1px solid #ddd !important;
+}
+
+.edd-add-to-cart.button {
+  position: relative;
+  display: inline-block;
+  padding: 18px 48px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.26, 0.42, 0, 0.96);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: break-word;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
 }

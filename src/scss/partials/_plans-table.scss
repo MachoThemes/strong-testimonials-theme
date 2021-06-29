@@ -1,0 +1,133 @@
+.plans-table {
+  .plan {
+    background-color: #fff;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    border-right: 1px dotted #DDD;
+    padding: 0;
+
+    &:first-child {
+      border-left: 1px solid #DDD;
+    }
+
+    &:last-child {
+      border-right-style: solid;
+    }
+  }
+
+  .edd_purchase_submit_wrapper {
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+  }
+
+  .plans-table__package_description {
+    color: #777;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+    min-height: 90px;
+  }
+
+  .plans-table__title {
+    text-align: center;
+    padding-top: 15px;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    text-indent: .2rem;
+  }
+
+  .plans-table__content {
+    padding: 20px;
+
+    ul {
+      font-size: 16px;
+      margin-top: 20px;
+      padding-left: 40px;
+
+      li {
+        list-style-type:none;
+
+        .accordion__title {
+          background:transparent;
+        }
+      }
+    }
+  }
+
+  .plans-table__price {
+    text-align: center;
+    font-size: 2rem;
+    text-indent: -.25em;
+  }
+
+  .plans-table__initial-price {
+    margin-bottom: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    color: #d9d9d9;
+    line-height: 1;
+    text-decoration: line-through;
+    -webkit-text-decoration-color: red;
+    text-decoration-color: red;
+  }
+
+  .plans-table__savings {
+    text-align: center;
+
+    p {
+      border-bottom: 1px solid #ebebeb;
+      padding-bottom: 20px;
+    }
+  }
+
+  .button plans-table__button {
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .button.plans-table__button {
+    margin: 0 auto;
+    display: block;
+    width: 180px;
+  }
+
+  .compare-plans-button {
+    text-align: center;
+  }
+
+  > .plan:nth-child(2) {
+    position: relative;
+    background: #fefff0;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(208, 219, 219, .7);
+
+    &:before {
+      content: 'BEST DEAL';
+      width: 100%;
+      display: inline-block;
+      opacity: 1;
+      position: absolute;
+      top: -1px;
+      background: #41495b;
+      text-align: center;
+      left: 0;
+      right: 0;
+      color: #fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      padding: 10px 5px;
+      transform: translateY(-100%);
+    }
+  }
+}
+
+.pricing-messsage-row {
+  border: 1px solid #DDD;
+  border-top: none;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
