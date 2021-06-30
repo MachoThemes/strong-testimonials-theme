@@ -108,6 +108,10 @@ html body .main-table {
     border-bottom: none;
   }
 
+  &:last-child {
+    opacity: 1;
+  }
+
 }
 
 .pricing-table__title {

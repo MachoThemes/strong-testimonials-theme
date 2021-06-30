@@ -359,7 +359,7 @@ input[type=submit] {
   padding: 15px 32px;
   color: #fff;
   text-align: center;
-  border-radius: 46px;
+  /*border-radius: 46px;*/
   cursor: pointer;
   background: #5333ED;
   transition: all 0.5s cubic-bezier(0.26, 0.42, 0, 0.96);
@@ -4837,6 +4837,8 @@ html body .main-table .pricing-table .pricing-breaker {
     background: transparent;
     opacity: 0.5;
     border-bottom: none; }
+  .pricing-table--last > div:last-child {
+    opacity: 1; }
 
 .pricing-table__title {
   font-weight: 600;
@@ -6479,7 +6481,7 @@ p.edd-logged-out {
 .edd-add-to-cart.button, .edd-add-to-cart.wp-block-button__link {
   position: relative;
   display: inline-block;
-  padding: 18px 48px;
+  padding: 10px;
   text-align: center;
   cursor: pointer;
   transition: all 0.5s cubic-bezier(0.26, 0.42, 0, 0.96);

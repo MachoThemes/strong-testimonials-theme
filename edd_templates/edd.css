@@ -422,6 +422,7 @@
 }
 .edd_purchase_submit_wrapper a.edd-add-to-cart.edd-has-js {
 	display: inline-block;
+	min-width:180px;
 }
 .edd_purchase_submit_wrapper .edd-cart-ajax {
 	display: none;
@@ -870,15 +871,16 @@ input.edd_submit_plain {
 /** Blue */
 .edd-submit.button.blue {
 	color: #ffffff;
-	background: #428bca;
-	border-color: #357ebd;
+	background: #5333ED;
+	border-color: #5333ED;
 }
 .edd-submit.button.blue:hover,
 .edd-submit.button.blue:focus,
 .edd-submit.button.blue.active {
-	color: #ffffff;
-	background: #3276b1;
-	border-color: #285e8e;
+	color: #292a2a;
+	background: #fff;
+	border-color: #fff;
+	box-shadow: 0px 6px 12px 0px rgb(0 0 0 / 30%);
 }
 .edd-submit.button.blue.active {
 	background-image: none;
