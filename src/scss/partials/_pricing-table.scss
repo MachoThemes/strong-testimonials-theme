@@ -24,6 +24,22 @@
 
 }
 
+html body .main-table {
+  .pricing-table {
+
+    .pricing-breaker {
+      background-color: #ebebeb;
+      padding: 15px 0 15px 10px;
+      width: 100%;
+
+      h4 {
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
 
 
 .pricing-table > div {
@@ -74,23 +90,21 @@
   background: #F3EAD1 !important;
 }
 
-.pricing-table--last > div:first-child {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background:transparent;
-  opacity: 0.5;
-}
-
 .pricing-table--last > div {
-  padding-top:30px;
-  padding-bottom:30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   height: auto;
   border-bottom: 1px solid #eeebf2;
   display: block;
 
-  &:first-child {
+  &:first-child,
+  &:last-child {
     border-left: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: transparent;
+    opacity: 0.5;
     border-bottom: none;
   }
 
@@ -101,17 +115,21 @@
   margin-bottom: 30px;
 }
 
-
 .pricing-table__message {
-  border-radius: 6px;
-  padding: 0.5rem;
-  background-color: #383c44;
-  color: rgba(255,255,255,0.7);
+  padding: 1rem;
+  background-color: #3e3e3e;
+  color: #FFF;
   font-weight: 400;
-  opacity: 0;
+  max-width: 90%;
+  line-height: 1.15;
 
-  .icon-right-open-big {
-    filter: invert(100%);
+
+  h6 {
+    color: #FFF;
+  }
+
+  small {
+    font-size: 12px;
   }
 
   &.in-viewport {

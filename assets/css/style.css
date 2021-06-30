@@ -118,7 +118,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6, .comment .fn {
   color: #292a2a;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 1rem; }
 
 h1, .h1 {
@@ -609,6 +609,97 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
 
 /* =Grid
    ========================================================================== */
+/**
+Something from style.css got from Cristian
+ */
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
+.col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
+.col-xl-auto {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px; }
+
+.col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%; }
+
+.col-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%; }
+
+.col-1 {
+  -ms-flex: 0 0 8.33333%;
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%; }
+
+.col-2 {
+  -ms-flex: 0 0 16.66667%;
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%; }
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
+.col-4 {
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%; }
+
+.col-5 {
+  -ms-flex: 0 0 41.66667%;
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%; }
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; }
+
+.col-7 {
+  -ms-flex: 0 0 58.33333%;
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%; }
+
+.col-8 {
+  -ms-flex: 0 0 66.66667%;
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%; }
+
+.col-9 {
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; }
+
+.col-10 {
+  -ms-flex: 0 0 83.33333%;
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%; }
+
+.col-11 {
+  -ms-flex: 0 0 91.66667%;
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%; }
+
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%; }
+
+.order-first {
+  -ms-flex-order: -1;
+  order: -1; }
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -3511,6 +3602,8 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
     padding-top: 3rem; }
     .page-template-checkout header.header .header__content {
       margin: 0 auto; }
+      .page-template-checkout header.header .header__content a.logo-link {
+        margin: 0 auto; }
   .page-template-checkout .title-wrap {
     padding-top: 20px; }
   .page-template-checkout #edd_purchase_form {
@@ -3900,6 +3993,81 @@ input[type=checkbox].checkbox, .edd-login-remember input[type=checkbox],
   background: #fff;
   border-radius: 10px;
   box-shadow: -3px 2px 70px 0px rgba(128, 144, 174, 0.16); }
+
+.pricing-table {
+  display: block; }
+
+.page-template-pricing-section-2 .pricing-table {
+  display: none; }
+
+.main-table .pricing-table--header > :nth-child(3) {
+  position: relative;
+  background: #fff; }
+  .main-table .pricing-table--header > :nth-child(3):before {
+    content: 'BEST DEAL';
+    width: 100%;
+    display: inline-block;
+    opacity: 1;
+    position: absolute;
+    top: -1px;
+    background: #41495b;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    transform: translateY(-100%); }
+
+/* featured pricing package */
+.main-table .pricing-table > :nth-child(3) {
+  background: #fefff0; }
+
+.lite-vs-pro-table > .row {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.lite-vs-pro-table h3 {
+  margin-bottom: 3rem; }
+
+.lite-vs-pro-table h3 span {
+  position: relative;
+  z-index: 1; }
+
+.lite-vs-pro-table h3 span:before {
+  background: red;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: #fbc556;
+  z-index: -1;
+  border-radius: 30px; }
+
+.lite-vs-pro-table .last-column {
+  min-height: 217.5px; }
+
+@media screen and (max-width: 1000px) {
+  .main-table {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: none; } }
+
+@media screen and (max-width: 1000px) {
+  .lite-vs-pro-table {
+    width: 100%;
+    overflow: scroll; } }
+
+html body .pricing-table.row .pricing-breaker {
+  background-color: #ebebeb;
+  padding: 15px 0 15px 10px;
+  width: 100%; }
+  html body .pricing-table.row .pricing-breaker h4 {
+    margin-bottom: 0;
+    font-size: 18px; }
 
 .stats-section {
   background: #EFECFE; }
@@ -4602,6 +4770,14 @@ img {
     height: 10px;
     background-image: url(../images/icons/cancel--red.svg); }
 
+html body .main-table .pricing-table .pricing-breaker {
+  background-color: #ebebeb;
+  padding: 15px 0 15px 10px;
+  width: 100%; }
+  html body .main-table .pricing-table .pricing-breaker h4 {
+    margin-bottom: 0;
+    font-size: 18px; }
+
 .pricing-table > div {
   text-align: center;
   border-left: 1px solid #eeebf2;
@@ -4644,24 +4820,22 @@ img {
 .pricing-table--highlight > div {
   background: #F3EAD1 !important; }
 
-.pricing-table--last > div:first-child {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  background: transparent;
-  opacity: 0.5; }
-
 .pricing-table--last > div {
   padding-top: 30px;
   padding-bottom: 30px;
   height: auto;
   border-bottom: 1px solid #eeebf2;
   display: block; }
-  .pricing-table--last > div:first-child {
+  .pricing-table--last > div:first-child, .pricing-table--last > div:last-child {
     border-left: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    background: transparent;
+    opacity: 0.5;
     border-bottom: none; }
 
 .pricing-table__title {
@@ -4669,14 +4843,16 @@ img {
   margin-bottom: 30px; }
 
 .pricing-table__message {
-  border-radius: 6px;
-  padding: 0.5rem;
-  background-color: #383c44;
-  color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  background-color: #3e3e3e;
+  color: #FFF;
   font-weight: 400;
-  opacity: 0; }
-  .pricing-table__message .icon-right-open-big, .pricing-table__message .nav-links .next:before, .nav-links .pricing-table__message .next:before {
-    filter: invert(100%); }
+  max-width: 90%;
+  line-height: 1.15; }
+  .pricing-table__message h6 {
+    color: #FFF; }
+  .pricing-table__message small {
+    font-size: 12px; }
   .pricing-table__message.in-viewport {
     animation-name: animation-4;
     animation-duration: 3s; }
@@ -5524,11 +5700,31 @@ img {
     padding: 10px 5px;
     transform: translateY(-100%); }
 
+/*
 .pricing-messsage-row {
   border: 1px solid #DDD;
   border-top: none;
   background-color: #fff;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+}*/
+@media (min-width: 576px) {
+  .pricing-message {
+    text-align: left; }
+    .pricing-message:before {
+      float: left; }
+  .pricing-message__content {
+    padding-left: 190px; }
+  .pricing-message {
+    background: #fff;
+    padding: 55px;
+    margin-bottom: 0; }
+    .pricing-message:before {
+      width: 100px;
+      height: 100px;
+      background: url("../../src/img/14Day-Guarantee-Purple.png") no-repeat 50% 50%;
+      background-size: cover;
+      display: inline-block;
+      content: ''; } }
 
 /* EDD Styling begins here */
 /* right sidebar */
@@ -6295,7 +6491,8 @@ p.edd-logged-out {
   white-space: normal;
   overflow-wrap: break-word;
   box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 0; }
+  border-radius: 0;
+  width: auto; }
 
 html {
   font-size: 100%; }

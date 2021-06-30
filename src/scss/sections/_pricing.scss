@@ -5,3 +5,97 @@
     box-shadow: -3px 2px 70px 0px rgba(128, 144, 174, 0.16);
   }
 }
+
+.pricing-table {
+  display: block;
+}
+
+
+.page-template-pricing-section-2 .pricing-table {
+  display: none;
+}
+
+.main-table .pricing-table--header > :nth-child(3) {
+  position: relative;
+  background: #fff;
+
+  &:before {
+    content: 'BEST DEAL';
+    width: 100%;
+    display: inline-block;
+    opacity: 1;
+    position: absolute;
+    top: -1px;
+    background: #41495b;
+    text-align: center;
+    left: 0;
+    right: 0;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    transform: translateY(-100%);
+  }
+}
+
+/* featured pricing package */
+.main-table .pricing-table > :nth-child(3) {
+  background: #fefff0;;
+}
+
+
+.lite-vs-pro-table > .row {
+  justify-content: center;
+}
+
+.lite-vs-pro-table h3 {
+  margin-bottom: 3rem;
+}
+
+.lite-vs-pro-table h3 span {
+  position: relative;
+  z-index: 1;
+}
+
+.lite-vs-pro-table h3 span:before {
+  background: red;
+  content: '';
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  background: $accent-color-2;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.lite-vs-pro-table .last-column {
+  min-height: 217.5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-table {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .lite-vs-pro-table {
+    width: 100%;
+    overflow: scroll;
+  }
+}
+
+html body .pricing-table.row .pricing-breaker {
+  background-color: #ebebeb;
+  padding: 15px 0 15px 10px;
+  width: 100%;
+
+  h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}

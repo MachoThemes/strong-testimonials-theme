@@ -125,9 +125,40 @@
   }
 }
 
+/*
 .pricing-messsage-row {
   border: 1px solid #DDD;
   border-top: none;
   background-color: #fff;
   margin-bottom: 60px;
+}*/
+
+@include media-breakpoint-up(sm) {
+
+  .pricing-message {
+    text-align: left;
+
+    &:before {
+      float:left;
+    }
+  }
+
+  .pricing-message__content {
+    padding-left: 190px;
+  }
+
+  .pricing-message {
+    background: #fff;
+    padding: 55px;
+    margin-bottom: 0;
+
+    &:before {
+      width: 100px;
+      height: 100px;
+      background: url('../../src/img/14Day-Guarantee-Purple.png') no-repeat 50% 50%;
+      background-size: cover;
+      display: inline-block;
+      content: '';
+    }
+  }
 }

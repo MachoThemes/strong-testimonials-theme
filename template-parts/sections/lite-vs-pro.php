@@ -23,7 +23,7 @@ $addons = st_get_all_extensions();
 
 					</div>
 					<div class="col-xs-4">
-						<h4 class="pricing-table__title">Agency, Business, Plus & Basic</h4>
+						<h4 class="pricing-table__title">Paid plans</h4>
 						<br />
 						<a class="button pricing-table__button" href="#pricing">Upgrade Now</a>
 					</div>
