@@ -146,7 +146,7 @@
 											<div class="row">
 
 											<?php foreach ( $bundled_products as $bundle_item ) : ?>
-												<div class="edd_bundled_product col-12 col-md-6 col-xl-3 d-flex flex-column mb-5">
+												<div class="edd_bundled_product col-12 col-md-6 col-lg-3 mb-5">
 													<p class="edd_bundled_product_name"><?php echo edd_get_bundle_item_title( $bundle_item ); ?></p>
 
 														<?php
