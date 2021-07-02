@@ -158,6 +158,12 @@
 		}
 	}
 
+	.button--download-icon {
+		&:hover {
+			background-image: url(../images/download-icon-black.png);
+		}
+	}
+
 }
 
 .page-template-become-an-affilliate {
