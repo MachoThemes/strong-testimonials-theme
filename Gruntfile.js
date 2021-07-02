@@ -74,7 +74,6 @@ module.exports = function(grunt){
 					'!modula.zip',
 					'!webpack.config.js',
 					'!postcss.config.js',
-					'!src/**',
                     '!nbproject/**' ],
                 dest: 'build/'
             }

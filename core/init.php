@@ -90,7 +90,7 @@ if ( ! function_exists( 'antreas_styles_customizer_preview' ) ) {
 if ( ! function_exists( 'antreas_add_styles' ) ) {
 	add_action( 'wp_enqueue_scripts', 'antreas_add_styles' );
 	function antreas_add_styles() {
-		wp_enqueue_style( ANTREAS_SLUG . '-main', ANTREAS_ASSETS_CSS . 'style.css', array() );
+		wp_enqueue_style( ANTREAS_SLUG . '-main', ANTREAS_ASSETS_CSS . 'style.css', array(), ANTREAS_VERSION );
 		wp_add_inline_style( ANTREAS_SLUG . '-main', antreas_generate_custom_css() );
 
 		if ( is_singular( 'docs' ) ) {

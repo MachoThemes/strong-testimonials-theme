@@ -1,11 +1,11 @@
 <?php
 
-$theme = wp_get_theme();
+// $theme = wp_get_theme();
 define( 'ANTREAS_SLUG', 'antreas' );
 define( 'ANTREAS_PRO_SLUG', 'antreas-pro' );
 define( 'ANTREAS_PREFIX', 'antreas_pro' );
-define( 'ANTREAS_NAME', $theme['Name'] );
-define( 'ANTREAS_VERSION', $theme['Version'] );
+define( 'ANTREAS_NAME', 'Strong Testimonials' );
+define( 'ANTREAS_VERSION', '1.0.5');
 define( 'ANTREAS_ASSETS_CSS', get_template_directory_uri() . '/assets/css/' );
 define( 'ANTREAS_ASSETS_JS', get_template_directory_uri() . '/assets/js/' );
 define( 'ANTREAS_ASSETS_IMG', get_template_directory_uri() . '/assets/images/' );
