@@ -211,6 +211,8 @@
 			</div>
 		</div>
 
+		<?php echo do_shortcode('[edd_shareasale]'); ?>
+
 		<?php if ( isset( $_GET['payment_key'] ) ): ?>
 
 			<div class="row justify-content-center mt-5 mb-5">
