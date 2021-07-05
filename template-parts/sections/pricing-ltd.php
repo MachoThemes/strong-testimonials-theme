@@ -37,7 +37,7 @@ $addons = st_get_all_extensions( $downloads );
 
 				<div class="pricing-table pricing-table--header row">
 
-					<div class="col">
+					<div class="col-xs-3">
 
 						<div class="pricing-table__message visible-xs waypoint">
 							<div class="row align-items-center">
@@ -54,7 +54,7 @@ $addons = st_get_all_extensions( $downloads );
 
 					<?php foreach( $downloads as $download ): ?>
 
-						<div class="col <?php echo isset( $download->higher_plan ) && $download->higher_plan === false ? 'pricing-table-inactive': ''; ?>">
+						<div class="col-xs-3 <?php echo isset( $download->higher_plan ) && $download->higher_plan === false ? 'pricing-table-inactive': ''; ?>">
 
 							<?php if( $download->post_title === 'Plus' ): ?>
 								<div class="pricing-table__label">Most Popular</div>
@@ -111,7 +111,7 @@ $addons = st_get_all_extensions( $downloads );
 					</div>
 
 					<div class="pricing-table row">
-					<div class="col" style="border-top-left-radius: 10px;">
+					<div class="col-xs-3" style="border-top-left-radius: 10px;">
 						Supported Sites
 						<span class="tooltip">
 							<i class="icon-question-circle"></i>
@@ -121,7 +121,7 @@ $addons = st_get_all_extensions( $downloads );
 
 					<?php foreach( $downloads as $download ): ?>
 
-						<div class="col">
+						<div class="col-xs-3">
 							<?php echo st_nr_of_sites( $download->ID ); ?>
 						</div>
 
@@ -130,39 +130,39 @@ $addons = st_get_all_extensions( $downloads );
 					</div><!-- row -->
 
 					<div class="pricing-table row">
-					<div class="col">
+					<div class="col-xs-3">
 						Lifetime Support
 						<span class="tooltip">
 							<i class="icon-question-circle"></i>
 							<span class="tooltip__text">In case you ever run into issues with our plugin (unlikely), feel free to reach out to our support at any time.</span>
 						</span>
 					</div>
-					<div class="col">
+					<div class="col-xs-3">
 						<i class="icon-ok"></i>
 					</div>
-					<div class="col">
+					<div class="col-xs-3">
 						<i class="icon-ok"></i>
 					</div>
-					<div class="col">
+					<div class="col-xs-3">
 						<i class="icon-ok"></i>
 					</div>
 					</div><!-- row -->
 
 					<div class="pricing-table row">
-					<div class="col">
+					<div class="col-xs-3">
 						Lifetime of Free Updates
 						<span class="tooltip">
 							<i class="icon-question-circle"></i>
 							<span class="tooltip__text">You’ll have lifetime access to updates – including future versions of Strong Testimonials.</span>
 						</span>
 					</div>
-					<div class="col">
+					<div class="col-xs-3">
 						<i class="icon-ok"></i>
 					</div>
-					<div class="col">
+					<div class="col-xs-3">
 						<i class="icon-ok"></i>
 					</div>
-					<div class="col">
+					<div class="col-xs-3">
 						<i class="icon-ok"></i>
 					</div>
 					</div><!-- row -->
@@ -171,7 +171,7 @@ $addons = st_get_all_extensions( $downloads );
 					<?php $addons->the_post(); ?>
 
 					<div class="row pricing-table <?php echo isset( $utm_medium ) && $utm_medium === get_post_field( 'post_name' ) ? 'pricing-table--highlight' : ''; ?>">
-						<div class="col">
+						<div class="col-xs-3">
 							<?php echo st_get_post_meta( get_the_id(), 'pricing_title' ) != '' ? st_get_post_meta( get_the_id(), 'pricing_title' ) : ltrim( get_the_title(), "Strong Testimonials" ); ?>
 
 							<?php if ( st_get_post_meta( get_the_id(), 'tooltip' ) != '' || has_excerpt() ): ?>
@@ -183,7 +183,7 @@ $addons = st_get_all_extensions( $downloads );
 						</div>
 
 						<?php foreach ( $downloads as $download ): ?>
-							<div class="col">
+							<div class="col-xs-3">
 								<?php if ( false === array_search( get_the_id(), $download->get_bundled_downloads() ) ): ?>
 									<i class="icon-cancel"></i>
 								<?php else: ?>
@@ -197,13 +197,13 @@ $addons = st_get_all_extensions( $downloads );
 					<?php endwhile; ?>
 
 					<div class="pricing-table pricing-table--last row">
-					<div class="col text-left">
+					<div class="col-xs-3 text-left">
 						<span class="mb-0"><small>Prices are listed in USD<br/> and don't include VAT</small></span>
 					</div>
 
 					<?php foreach ( $downloads as $download ): ?>
 
-						<div class="col <?php echo isset( $download->higher_plan ) && $download->higher_plan === false ? 'pricing-table-inactive': ''; ?>">
+						<div class="col-xs-3 <?php echo isset( $download->higher_plan ) && $download->higher_plan === false ? 'pricing-table-inactive': ''; ?>">
 
 							<?php if ( $upgrading && $download->higher_plan ): ?>
 								<a class="button pricing-table__button" href="<?php echo esc_url( edd_sl_get_license_upgrade_url( $license_by_key->ID, $download->upgrade_id ) ); ?>" title="Upgrade">Upgrade</a>
@@ -221,7 +221,7 @@ $addons = st_get_all_extensions( $downloads );
 		</div>
 
 		<div class="row mt-5 mb-5">
-			<div class="col">
+			<div class="col-xs-12">
 				<div class="pricing-message p-5 p-lg-4 p-xl-5">
 					<div class="row align-items-center">
 						<div class="col-md-2 text-center">

@@ -238,11 +238,11 @@ html body .main-table {
 }
 
 
-.main-table .pricing-table > :first-child {
+body:not(.page-template-pricing-ltd) .main-table .pricing-table > :first-child {
   width: 20%;
 }
 
-.main-table .pricing-table > :not(:first-child) {
+body:not(.page-template-pricing-ltd) .main-table .pricing-table > :not(:first-child) {
   width: 20%;
 }
 
