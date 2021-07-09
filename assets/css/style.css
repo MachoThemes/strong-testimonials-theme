@@ -5632,8 +5632,7 @@ html body .main-table .pricing-table .pricing-breaker {
   text-align: center;
   font-size: 16px;
   border-bottom: 1px solid #DDD;
-  padding-bottom: 20px;
-  min-height: 90px; }
+  padding-bottom: 20px; }
 
 .plans-table .plans-table__title {
   text-align: center;
